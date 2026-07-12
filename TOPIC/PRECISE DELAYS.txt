@@ -1,0 +1,116 @@
+========================================
+TIMER (TIM2) — PRECISE DELAYS
+========================================
+
+
+1. WHY NOT A for-LOOP DELAY
+---------------------------
+A crude  for(i=0; i<1000000; i++);  delay is GARBAGE:
+   - Its duration is unpredictable (depends on CPU, optimization).
+   - It made the clock read the SAME second multiple times (repeats),
+     because the loop was faster/slower than 1 real second.
+
+A hardware TIMER counts at a KNOWN, precise rate from the system clock,
+so it can measure a real, exact amount of time.
+
+
+2. TIMER vs PWM (same peripheral, different job)
+------------------------------------------------
+Same TIM peripheral used for PWM in Project 1, but:
+   PWM   -> the count goes OUT to a pin (fan needs the signal on a wire)
+   DELAY -> the count stays INSIDE, only our code checks it
+
+So a DELAY timer needs NO pin, NO AF mode, NO OTYPER/OSPEEDR/PUPDR.
+Just: enable clock -> set counting -> start -> watch the flag.
+
+
+3. THE COUNTING PROBLEM (why we need a prescaler)
+-------------------------------------------------
+System clock = 16,000,000 ticks/sec.
+A 1-second delay would need 16,000,000 ticks.
+
+But the counter (ARR) is only 16 bits -> max value = 2^16 - 1 = 65535.
+16,000,000 does NOT fit in 65535.
+
+Fix: the PRESCALER (PSC) slows the ticks BEFORE they reach the counter.
+
+
+4. PSC — THE PRESCALER (slows the clock down)
+---------------------------------------------
+Formula:   ticks_per_sec = clock / (PSC + 1)
+
+We want the counter to see 1000 ticks/sec:
+   16,000,000 / (PSC + 1) = 1000
+   PSC + 1 = 16000
+   PSC = 15999
+
+GENERAL FORMULA:
+   PSC = (clock / desired_ticks_per_sec) - 1
+
+
+5. ARR — THE COUNTER TOP (how many ticks = the delay)
+-----------------------------------------------------
+Counter sees 1000 ticks/sec. For a 1-second delay it must count 1000 ticks.
+But it starts at 0, so counting 0..999 IS 1000 ticks.
+   ARR = 999
+
+GENERAL FORMULA:
+   ARR = (ticks_to_count) - 1
+
+OFF-BY-ONE PATTERN (remember this for every timer):
+   Both PSC and ARR use "value + 1" internally,
+   so you always write ONE LESS than the raw number.
+      PSC = divider - 1
+      ARR = tick_count - 1
+
+
+6. UIF — THE "I FINISHED" FLAG
+------------------------------
+UIF (Update Interrupt Flag), bit 0 of TIM2_SR.
+   - The HARDWARE sets UIF = 1 when the counter completes a full
+     0 -> ARR run and rolls over. You do NOT set it.
+   - Your code POLLS it (like waiting for TXE/SB in I2C).
+   - After you see it, YOU clear it back to 0 for the next cycle.
+
+
+7. THE CODE
+-----------
+#include <stdio.h>
+#include <stdint.h>
+
+#define RCC_APB1 (*(volatile uint32_t*)0x40023840)  // APB1 clock enable
+#define TIM2_CR1 (*(volatile uint32_t*)0x40000000)  // control: CEN (start) at bit 0
+#define TIM2_SR  (*(volatile uint32_t*)0x40000010)  // status: UIF at bit 0
+#define TIM2_CNT (*(volatile uint32_t*)0x40000024)  // current counter value
+#define TIM2_PSC (*(volatile uint32_t*)0x40000028)  // prescaler
+#define TIM2_ARR (*(volatile uint32_t*)0x4000002C)  // auto-reload (counter top)
+
+void timInit(){
+    RCC_APB1 |= (1 << 0);   // TIM2 clock on
+    TIM2_PSC = 15999;       // (16,000,000 / 1000) - 1  -> 1000 ticks/sec
+    TIM2_ARR = 999;         // 1000 ticks - 1           -> 1 second
+    TIM2_CR1 |= (1 << 0);   // CEN: start the counter
+}
+
+void delay(){
+    TIM2_CNT = 0;                  // reset counter to a clean start
+    TIM2_SR &= ~(1 << 0);          // clear any old UIF
+    while(!(TIM2_SR & (1 << 0)));  // WAIT until UIF = 1 (one full second)
+    TIM2_SR &= ~(1 << 0);          // clear UIF, ready for next time
+}
+
+
+8. IMPORTANT DETAIL: use  =  NOT  |=  ON PSC/ARR
+------------------------------------------------
+PSC and ARR hold an EXACT value, so overwrite them with  =  .
+Using  |=  would OR-in bits on top of leftover garbage and could
+give a wrong divider/top value. (|= is for setting individual bits
+like CEN or UIF, not for whole-number value registers.)
+
+
+9. QUICK SELF-TEST
+------------------
+- Half-second delay (keep 1000 ticks/sec): ARR = 499  (500 ticks - 1)
+- Two-second delay: ARR won't fit (2000 > ... it fits in 16 bits fine,
+  2000-1 = 1999) -> ARR = 1999
+- Why PSC/ARR use  =  not  |=  ?  -> they hold exact values, not bit flags.
