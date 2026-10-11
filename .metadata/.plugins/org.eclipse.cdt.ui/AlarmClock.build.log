@@ -1,0 +1,10 @@
+06:36:30 **** Incremental Build of configuration Debug for project AlarmClock ****
+make -j7 all 
+arm-none-eabi-size  AlarmClock.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4168	      0	   1568	   5736	   1668	AlarmClock.elf
+Finished building: default.size.stdout
+ 
+
+06:36:30 Build Finished. 0 errors, 0 warnings. (took 97ms)
+

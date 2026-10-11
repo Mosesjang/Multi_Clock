@@ -1,7 +1,0 @@
-New Insights:
-
-1. GPIO config = "connect the wires to the right control system"
-I2C registers = "the control system that actually decides what signal goes out"
-
-You don't manually toggle SDA/SCL yourself in code at all — the I2C hardware peripheral does that automatically once you've configured the pins correctly and told it what to send.
-That's actually a huge realization — you just understood the separation between pin routing and protocol logic. That applies to EVERY peripheral (UART, SPI, PWM, all of them).

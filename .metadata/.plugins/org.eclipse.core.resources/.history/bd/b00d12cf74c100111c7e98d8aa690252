@@ -1,0 +1,35 @@
+/*
+ * menu.c
+ *
+ *  Created on: Oct 6, 2026
+ *      Author: j
+ */
+#include <stdint.h>
+#include "menu.h"
+#include "uart.h"
+#include "delay.h"
+
+static screen_t currentScreen = SCR_MENU;
+static uint8_t  selection = 0;
+
+static const char *menuNames[]   = { "Clock", "Alarm", "Pomodoro" };
+static const char *screenNames[] = { "MENU", "CLOCK", "ALARM", "POMODORO" };
+
+void menuInit(){
+	while(1){
+		printScreen();
+		delay(1000);
+	}
+}
+
+static void printScreen(void){
+	if(currentScreen == SCR_MENU){
+		uartPuts("Menu > ");
+		uartPuts(menuNames[selection]);
+	}
+	else{
+		uartPuts(screenNames[currentScreen]);
+		uartPuts(" > Back");
+	}
+		uartPuts("\r\n");
+}

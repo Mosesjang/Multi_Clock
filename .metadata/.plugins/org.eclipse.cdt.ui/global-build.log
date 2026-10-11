@@ -1,0 +1,496 @@
+19:45:51 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_hal_msp.o"
+In file included from ../Src/stm32f4xx_hal_msp.c:21:
+../Inc/main.h:30:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   30 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:49: Src/stm32f4xx_hal_msp.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+19:45:54 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_hal_msp.o"
+In file included from ../Src/stm32f4xx_hal_msp.c:21:
+../Inc/main.h:30:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   30 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:49: Src/stm32f4xx_hal_msp.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+19:46:15 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_hal_msp.o"
+../Src/stm32f4xx_hal_msp.c: In function 'HAL_MspInit':
+../Src/stm32f4xx_hal_msp.c:69:3: error: implicit declaration of function '__HAL_RCC_SYSCFG_CLK_ENABLE' [-Wimplicit-function-declaration]
+   69 |   __HAL_RCC_SYSCFG_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/stm32f4xx_hal_msp.c:70:3: error: implicit declaration of function '__HAL_RCC_PWR_CLK_ENABLE' [-Wimplicit-function-declaration]
+   70 |   __HAL_RCC_PWR_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+../Src/stm32f4xx_hal_msp.c: At top level:
+../Src/stm32f4xx_hal_msp.c:85:22: error: unknown type name 'SPI_HandleTypeDef'
+   85 | void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
+      |                      ^~~~~~~~~~~~~~~~~
+../Src/stm32f4xx_hal_msp.c:122:24: error: unknown type name 'SPI_HandleTypeDef'
+  122 | void HAL_SPI_MspDeInit(SPI_HandleTypeDef* hspi)
+      |                        ^~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:49: Src/stm32f4xx_hal_msp.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+19:46:35 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_hal_msp.o"
+In file included from ../Src/stm32f4xx_hal_msp.c:21:
+../Inc/main.h:30:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   30 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:49: Src/stm32f4xx_hal_msp.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+19:47:33 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/delay.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/delay.d" -MT"Src/delay.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/delay.o"
+arm-none-eabi-gcc "../Src/display.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/display.d" -MT"Src/display.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/display.o"
+arm-none-eabi-gcc "../Src/interrupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/interrupt.d" -MT"Src/interrupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/interrupt.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+arm-none-eabi-gcc "../Src/rotatryEncoder.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/rotatryEncoder.d" -MT"Src/rotatryEncoder.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/rotatryEncoder.o"
+arm-none-eabi-gcc "../Src/rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/rtc.d" -MT"Src/rtc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/rtc.o"
+../Src/menu.c:17:13: warning: 'printScreen' defined but not used [-Wunused-function]
+   17 | static void printScreen(void){
+      |             ^~~~~~~~~~~
+../Src/rtc.c: In function 'i2cWrite':
+../Src/rtc.c:62:23: warning: variable 'temp' set but not used [-Wunused-but-set-variable]
+   62 |     volatile uint32_t temp = I2S1;
+      |                       ^~~~
+../Src/rtc.c: In function 'i2cRead':
+../Src/rtc.c:81:23: warning: variable 'temp' set but not used [-Wunused-but-set-variable]
+   81 |     volatile uint32_t temp = I2S1;
+      |                       ^~~~
+../Src/rtc.c: In function 'i2cWrite':
+../Src/rtc.c:72:1: warning: control reaches end of non-void function [-Wreturn-type]
+   72 | }
+      | ^
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   4568	     28	   1572	   6168	   1818	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+19:47:48 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-size  MultiClock.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4568	     28	   1572	   6168	   1818	MultiClock.elf
+Finished building: default.size.stdout
+ 
+19:50:55 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   4580	     28	   1572	   6180	   1824	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+19:51:23 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   4116	     28	   1572	   5716	   1654	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+19:57:27 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+../Src/menu.c: In function 'menuInit':
+../Src/menu.c:20:17: error: implicit declaration of function 'printScreen' [-Wimplicit-function-declaration]
+   20 |                 printScreen();
+      |                 ^~~~~~~~~~~
+../Src/menu.c: At top level:
+../Src/menu.c:25:13: warning: conflicting types for 'printScreen'; have 'void(void)'
+   25 | static void printScreen(void){
+      |             ^~~~~~~~~~~
+../Src/menu.c:25:13: error: static declaration of 'printScreen' follows non-static declaration
+../Src/menu.c:20:17: note: previous implicit declaration of 'printScreen' with type 'void(void)'
+   20 |                 printScreen();
+      |                 ^~~~~~~~~~~
+../Src/menu.c:25:13: warning: 'printScreen' defined but not used [-Wunused-function]
+   25 | static void printScreen(void){
+      |             ^~~~~~~~~~~
+make: *** [Src/subdir.mk:46: Src/menu.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+19:58:05 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   1972	      0	   1568	   3540	    dd4	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+20:00:19 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2276	     28	   1572	   3876	    f24	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+20:03:08 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2268	     28	   1572	   3868	    f1c	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+20:04:16 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-size  MultiClock.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2268	     28	   1572	   3868	    f1c	MultiClock.elf
+Finished building: default.size.stdout
+ 
+20:05:12 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2268	     32	   1568	   3868	    f1c	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+20:05:28 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2268	     28	   1572	   3868	    f1c	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+20:09:30 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2268	     32	   1568	   3868	    f1c	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+20:09:52 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2268	     28	   1572	   3868	    f1c	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+21:41:58 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+../Src/menu.c:66:6: error: redefinition of 'menuInit'
+   66 | void menuInit(){
+      |      ^~~~~~~~
+../Src/menu.c:56:6: note: previous definition of 'menuInit' with type 'void(void)'
+   56 | void menuInit(void) { printScreen(); }
+      |      ^~~~~~~~
+../Src/menu.c: In function 'menuInit':
+../Src/menu.c:68:17: error: too few arguments to function 'screenMenu'
+   68 |                 screenMenu();
+      |                 ^~~~~~~~~~
+../Src/menu.c:33:13: note: declared here
+   33 | static void screenMenu(event_t ev){
+      |             ^~~~~~~~~~
+make: *** [Src/subdir.mk:46: Src/menu.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Src/main.c: In function 'main':
+../Src/main.c:40:20: error: implicit declaration of function 'getEvent' [-Wimplicit-function-declaration]
+   40 |         menuUpdate(getEvent());
+      |                    ^~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:61:9: error: conflicting types for 'getEvent'; have 'event_t(void)'
+   61 | event_t getEvent(void){
+      |         ^~~~~~~~
+../Src/main.c:40:20: note: previous implicit declaration of 'getEvent' with type 'int()'
+   40 |         menuUpdate(getEvent());
+      |                    ^~~~~~~~
+make: *** [Src/subdir.mk:46: Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+21:42:15 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+../Src/menu.c:66:6: error: redefinition of 'menuInit'
+   66 | void menuInit(){
+      |      ^~~~~~~~
+../Src/menu.c:56:6: note: previous definition of 'menuInit' with type 'void(void)'
+   56 | void menuInit(void) { printScreen(); }
+      |      ^~~~~~~~
+../Src/menu.c: In function 'menuInit':
+../Src/menu.c:68:17: error: too few arguments to function 'screenMenu'
+   68 |                 screenMenu();
+      |                 ^~~~~~~~~~
+../Src/menu.c:33:13: note: declared here
+   33 | static void screenMenu(event_t ev){
+      |             ^~~~~~~~~~
+make: *** [Src/subdir.mk:46: Src/menu.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+21:43:03 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+../Src/menu.c: In function 'menuInit':
+../Src/menu.c:67:17: error: too few arguments to function 'screenMenu'
+   67 |                 screenMenu();
+      |                 ^~~~~~~~~~
+../Src/menu.c:33:13: note: declared here
+   33 | static void screenMenu(event_t ev){
+      |             ^~~~~~~~~~
+make: *** [Src/subdir.mk:46: Src/menu.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+21:43:31 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+../Src/menu.c: In function 'menuInit':
+../Src/menu.c:68:17: error: too few arguments to function 'screenMenu'
+   68 |                 screenMenu();
+      |                 ^~~~~~~~~~
+../Src/menu.c:34:13: note: declared here
+   34 | static void screenMenu(event_t ev){
+      |             ^~~~~~~~~~
+make: *** [Src/subdir.mk:46: Src/menu.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+21:43:58 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/menu.d" -MT"Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/menu.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2632	     28	   1572	   4232	   1088	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+21:56:59 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/rotatryEncoder.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/rotatryEncoder.d" -MT"Src/rotatryEncoder.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/rotatryEncoder.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2536	     28	   1572	   4136	   1028	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+21:58:04 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-size  MultiClock.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2536	     28	   1572	   4136	   1028	MultiClock.elf
+Finished building: default.size.stdout
+ 
+21:59:02 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2536	     28	   1572	   4136	   1028	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+12:28:41 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-size  MultiClock.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2536	     28	   1572	   4136	   1028	MultiClock.elf
+Finished building: default.size.stdout
+ 
+12:28:46 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-size  MultiClock.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2536	     28	   1572	   4136	   1028	MultiClock.elf
+Finished building: default.size.stdout
+ 
+14:24:18 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/rotatryEncoder.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/rotatryEncoder.d" -MT"Src/rotatryEncoder.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/rotatryEncoder.o"
+../Src/rotatryEncoder.c:13:35: error: initializer element is not constant
+   13 | volatile int8_t  encoderDelta   = encoderDelta - 1;
+      |                                   ^~~~~~~~~~~~
+../Src/rotatryEncoder.c:14:35: error: initializer element is not constant
+   14 | volatile uint8_t buttonPressed  = buttonPressed - 1;
+      |                                   ^~~~~~~~~~~~~
+make: *** [Src/subdir.mk:46: Src/rotatryEncoder.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+14:25:18 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/rotatryEncoder.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/rotatryEncoder.d" -MT"Src/rotatryEncoder.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/rotatryEncoder.o"
+../Src/rotatryEncoder.c:13:35: error: initializer element is not constant
+   13 | volatile int8_t  encoderDelta   = (encoderDelta - 1);
+      |                                   ^
+../Src/rotatryEncoder.c:14:35: error: initializer element is not constant
+   14 | volatile uint8_t buttonPressed  = (buttonPressed - 1);
+      |                                   ^
+make: *** [Src/subdir.mk:46: Src/rotatryEncoder.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+14:25:57 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/rotatryEncoder.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/rotatryEncoder.d" -MT"Src/rotatryEncoder.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/rotatryEncoder.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2536	     28	   1572	   4136	   1028	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+14:32:29 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/rotatryEncoder.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/rotatryEncoder.d" -MT"Src/rotatryEncoder.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/rotatryEncoder.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2536	     28	   1572	   4136	   1028	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+14:35:18 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2536	     28	   1572	   4136	   1028	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+14:38:21 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2536	     28	   1572	   4136	   1028	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+14:38:48 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2536	     28	   1572	   4136	   1028	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 
+14:40:18 **** Incremental Build of configuration Debug for project MultiClock ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MultiClock.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/j/Documents/Embedded systems/Multi_Clock/MultiClock/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultiClock.elf
+ 
+arm-none-eabi-size  MultiClock.elf 
+arm-none-eabi-objdump -h -S MultiClock.elf  > "MultiClock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2540	     28	   1572	   4140	   102c	MultiClock.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultiClock.list
+ 

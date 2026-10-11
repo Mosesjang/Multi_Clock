@@ -1,0 +1,70 @@
+/*
+ * menu.c
+ *
+ *  Created on: Oct 6, 2026
+ *      Author: j
+ */
+#include <stdint.h>
+#include "menu.h"
+#include "uart.h"
+#include "delay.h"
+
+static void printScreen(void);
+static void screenMenu(event_t ev);
+
+static screen_t currentScreen = SCR_MENU;
+static uint8_t  selection = 0;
+
+static const char *menuNames[]   = { "Clock", "Alarm", "Pomodoro" };
+static const char *screenNames[] = { "MENU", "CLOCK", "ALARM", "POMODORO" };
+
+
+static void printScreen(void){
+	if(currentScreen == SCR_MENU){
+		uartPuts("Menu > ");
+		uartPuts(menuNames[selection]);
+	}
+	else{
+		uartPuts(screenNames[currentScreen]);
+		uartPuts(" > Back");
+	}
+		uartPuts("\r\n");
+}
+
+static void screenMenu(event_t ev){
+	switch(ev){
+				case EV_CW: selection = (selection + 1) % 3;
+				break;
+				case EV_CCW: selection = (selection + 2) % 3;
+				break;
+				case EV_CLICK: currentScreen = (screen_t)(SCR_CLOCK + selection);
+							   selection = 0;
+				break;
+				default: return;
+	}
+	printScreen();
+}
+
+static void screenStub(event_t ev)
+{
+    if (ev == EV_CLICK) {
+        currentScreen = SCR_MENU;
+        selection = 0;
+        printScreen();
+    }
+}
+
+
+void menuUpdate(event_t ev)
+{
+    switch (currentScreen) {
+    case SCR_MENU: screenMenu(ev); break;
+    default:       screenStub(ev); break;
+    }
+}
+
+void menuInit(){
+		printScreen();
+		screenMenu();
+}
+

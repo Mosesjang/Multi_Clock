@@ -1,0 +1,16 @@
+!SESSION 2026-10-11 09:53:57.104 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_KR
+Framework arguments:  -keyring /Users/j/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -keyring /Users/j/.eclipse_keyring -data /Users/j/Documents/Embedded systems/Multi_Clock/code
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-10-11 09:54:05.648
+!MESSAGE Log4j2 initialized with config file /Users/j/Documents/Embedded systems/Multi_Clock/code/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-10-11 09:54:07.807
+!MESSAGE Started RMI Server, listening on port 41345
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-11 09:54:28.811
+!MESSAGE Indexed 'MultiClock' (18 sources, 70 headers) in 0.512 sec: 2,509 declarations; 4,500 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)

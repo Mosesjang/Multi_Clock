@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;MultiClock/Src/main.c&apos;" deleteContents="false" description="Delete resource &apos;MultiClock/Src/main.c&apos;" element1="/MultiClock/Src/main.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1789682152585"/>&#x0A;<refactoring comment="Delete resource &apos;AlarmClock&apos;" deleteContents="false" description="Delete resource &apos;AlarmClock&apos;" element1="/AlarmClock" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1789682252121"/>
+</session>

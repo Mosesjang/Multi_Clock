@@ -1,0 +1,20 @@
+/*
+ * menu.h
+ *
+ *  Created on: Oct 6, 2026
+ *      Author: j
+ */
+
+#ifndef MENU_H_
+#define MENU_H_
+
+
+typedef enum { EV_NONE, EV_CW, EV_CCW, EV_CLICK, EV_HOLD } event_t;
+typedef enum { SCR_MENU, SCR_CLOCK, SCR_ALARM, SCR_POMODORO } screen_t;
+
+void menuInit(void);
+void menuUpdate(event_t ev);
+static void printScreen(void);
+
+
+#endif /* MENU_H_ */
