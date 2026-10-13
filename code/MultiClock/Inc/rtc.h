@@ -13,6 +13,7 @@ void i2cScan();
 int i2cWrite();
 int i2cRead();
 int bcdToDec(uint8_t bcd);
+void printTime();
 
 
 #endif /* RTC_H_ */

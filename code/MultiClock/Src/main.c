@@ -13,7 +13,7 @@
 #define GPIOA_MODER (*(volatile uint32_t*)0x40020000)
 #define GPIOA_ODR (*(volatile uint32_t*)0x40020014)
 
-void printTime();
+
 event_t getEvent(void);
 
 
@@ -39,7 +39,7 @@ menuInit();
 while(1){
 
 	menuUpdate(getEvent());
-//	printTime();
+
 
 
 //     screen /dev/tty.usbmodem* 9600
@@ -49,17 +49,10 @@ while(1){
 
 }
 
-void printTime(){
-	 printNumber(bcdToDec(i2cRead(0x02)));
-	 sendUartChar(':');
-	 printNumber(bcdToDec(i2cRead(0x01)));
-	 sendUartChar(':');
-	 printNumber(bcdToDec(i2cRead(0x00)));
-	 sendUartChar('\r');
-     sendUartChar('\n'); // newline for readability
-}
+
 
 event_t getEvent(void){
+	delay(50);
 	if (buttonPressed){
 		buttonPressed = 0;
 		return EV_CLICK;

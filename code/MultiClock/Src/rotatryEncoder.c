@@ -63,5 +63,6 @@ void dirDetect(){ //function runs in interrupt
 
 void butttonDetect(){ //function runs in interrupt
 	buttonPressed = 1;
+
 }
 

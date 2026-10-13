@@ -10,7 +10,9 @@
 
 
 typedef enum { EV_NONE, EV_CW, EV_CCW, EV_CLICK, EV_HOLD } event_t;
-typedef enum { SCR_MENU, SCR_CLOCK, SCR_ALARM, SCR_POMODORO } screen_t;
+typedef enum { SCR_MENU, SCR_CLOCK, SCR_ALARM, SCR_POMODORO,
+			   SCR_SET_CLOCK, SCR_DISPLAY_CLOCK} screen_t;
+
 
 void menuInit(void);
 void menuUpdate(event_t ev);

@@ -11,7 +11,7 @@
 
 void rotatryInit();
 void dirDetect();
-void butttonDetect();
+void  butttonDetect();
 extern volatile int8_t  encoderDelta;
 extern volatile uint8_t buttonPressed;
 

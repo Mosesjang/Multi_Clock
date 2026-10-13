@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdint.h>
+#include "uart.h"
+#include "delay.h"
+#include "rotatryEncoder.h"
 
 // RCC
 #define RCC_AHB1      (*(volatile uint32_t*)0x40023830)
@@ -107,5 +110,20 @@ int bcdToDec(uint8_t bcd){
 	uint8_t ones = bcd & 0x0F;
 	return  (tens * 10) + ones;
 }
+
+void printTime(){
+
+		 printNumber(bcdToDec(i2cRead(0x02)));
+		 sendUartChar(':');
+		 printNumber(bcdToDec(i2cRead(0x01)));
+		 sendUartChar(':');
+		 printNumber(bcdToDec(i2cRead(0x00)));
+		 sendUartChar('\r');
+	     sendUartChar('\n'); // newline for readability
+
+	     delay(1000);
+
+	}
+
 
 
